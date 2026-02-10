@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Info Kewangan 24H - Bantuan Segera</title>
+    <title>Fast Cash Solution</title>
     
     <script>
     !function(f,b,e,v,n,t,s)
@@ -15,32 +15,91 @@
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
     
-    // 【修改这里】把 '1234567890' 换成你真实的 Pixel ID
-    fbq('init', '1234567890'); 
+    // 【记得替换你的 Pixel ID】
+    fbq('init', 'YOUR_PIXEL_ID_HERE'); 
     fbq('track', 'PageView');
     </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1234567890&ev=PageView&noscript=1"
-    /></noscript>
     <style>
-        body { font-family: sans-serif; background-color: #f0f2f5; margin: 0; padding: 20px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; }
-        .card { background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); max-width: 400px; width: 100%; }
-        h1 { color: #333; font-size: 24px; margin-bottom: 10px; }
-        p { color: #666; margin-bottom: 30px; line-height: 1.5; }
-        .btn { background-color: #25D366; color: white; padding: 15px 30px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 18px; display: block; box-shadow: 0 4px 6px rgba(37, 211, 102, 0.4); transition: transform 0.2s; }
-        .btn:active { transform: scale(0.98); }
-        .footer { margin-top: 30px; font-size: 12px; color: #999; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background-color: #f4f6f8; margin: 0; padding: 20px; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+        .container { background: white; padding: 35px 25px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); max-width: 380px; width: 100%; text-align: center; box-sizing: border-box; }
+        
+        /* 状态条优化 */
+        .status-bar { display: inline-flex; align-items: center; background-color: #e8f5e9; color: #2e7d32; padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 700; margin-bottom: 25px; }
+        .dot { height: 8px; width: 8px; background-color: #00c853; border-radius: 50%; display: inline-block; margin-right: 8px; box-shadow: 0 0 0 2px rgba(0,200,83,0.2); }
+
+        h1 { color: #222; font-size: 26px; margin: 0 0 15px 0; font-weight: 800; letter-spacing: -0.5px; }
+        
+        /* 副标题改为列表式，混搭英文 */
+        .features { text-align: left; margin: 0 auto 30px auto; display: inline-block; }
+        .feature-item { color: #555; font-size: 15px; margin-bottom: 8px; display: flex; align-items: center; }
+        .check-icon { color: #25D366; margin-right: 8px; font-weight: bold; }
+
+        /* 核心按钮优化 */
+        .btn-main { background: linear-gradient(180deg, #25D366 0%, #128C7E 100%); color: white; text-decoration: none; padding: 18px; border-radius: 12px; font-weight: 800; font-size: 19px; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3); transition: transform 0.1s; margin-bottom: 30px; letter-spacing: 0.5px; }
+        .btn-main:active { transform: scale(0.97); }
+        .whatsapp-icon { width: 26px; height: 26px; fill: white; margin-right: 12px; }
+
+        /* 信任图标区域 - 中英混搭 */
+        .trust-badges { 
+            display: flex; 
+            justify-content: space-between; 
+            border-top: 1px solid #f0f0f0; 
+            padding-top: 25px; 
+            width: 100%;
+        }
+        .badge { 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            font-size: 11px; 
+            color: #666; 
+            font-weight: 500;
+            flex: 1;
+        }
+        .badge svg { width: 24px; height: 24px; margin-bottom: 8px; fill: #444; }
+
+        .footer { margin-top: 25px; font-size: 11px; color: #ccc; }
     </style>
 </head>
 <body>
-    <div class="card">
-        <h1>Perlukan Bantuan Tunai?</h1>
-        <p>Kami menyediakan perkhidmatan perundingan kewangan yang pantas dan selamat untuk anda.<br>(我们需要为您提供快速安全的资金咨询服务)</p>
+
+    <div class="container">
+        <div class="status-bar">
+            <span class="dot"></span>Online: Instant Reply
+        </div>
+
+        <h1>Perlukan Wang Segera?</h1>
         
-        <a href="https://wa.me/60182763063?text=Saya%20berminat" class="btn" onclick="fbq('track', 'Lead');">
-            Hubungi Melalui WhatsApp
+        <div class="features">
+            <div class="feature-item"><span class="check-icon">✓</span> Fast Approval (Lulus Segera)</div>
+            <div class="feature-item"><span class="check-icon">✓</span> 100% Selamat & Private</div>
+            <div class="feature-item"><span class="check-icon">✓</span> No Hidden Fees (Tiada Caj)</div>
+        </div>
+        
+        <a href="https://wa.me/60182763063?text=Hi%2C%20I%20want%20to%20apply%20(Fast%20Cash)" class="btn-main" onclick="fbq('track', 'Lead');">
+            <svg class="whatsapp-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.008-.57-.008-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            Apply Now (WhatsApp)
         </a>
+
+        <div class="trust-badges">
+            <div class="badge">
+                <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                <span>Secure</span>
+            </div>
+            <div class="badge">
+                <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                <span>Fast</span>
+            </div>
+            <div class="badge">
+                <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 9h-2V5h2v6zm0 4h-2v-2h2v2z"/></svg>
+                <span>24/7 Support</span>
+            </div>
+        </div>
+
+        <div class="footer">
+            &copy; 2026 Financial Solution. All Rights Reserved.
+        </div>
     </div>
-    <div class="footer">© 2026 Info Kewangan 24H. All rights reserved.</div>
+
 </body>
 </html>
